@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="sk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Test porozumenia</title><link rel="stylesheet" href="/style.css"><script src="/session.js" defer></script><script src="/app.js" defer></script></head>
+<body><main>
+<header><div class="eyebrow" id="eyebrow">JAZYKOVÉ ÚLOHY · SK / EN / VI</div><h1 id="heading">Test porozumenia</h1><p id="intro"></p></header>
+<section id="setup" class="workspace content">
+ <h2 data-text="adultSetup"></h2>
+ <label for="language" data-text="language"></label><select id="language"><option value="sk">Slovenčina</option><option value="en">English</option><option value="vi">Tiếng Việt</option></select>
+ <p data-text="setupInfo"></p><div class="source-notice"><strong data-text="scopeTitle"></strong><p data-text="scopeNote"></p></div><p class="hint" data-text="memory"></p><p class="hint" id="setup-privacy"></p>
+ <div class="actions"><button id="start" disabled data-text="start"></button><button id="practice" class="secondary" disabled data-text="practice"></button></div>
+ <p id="load-error" role="alert" hidden></p>
+</section>
+<section id="exercise" class="workspace" hidden>
+ <div id="practice-settings" class="settings"><div><label for="task" data-text="task"></label><select id="task"></select></div><button id="practice-back" class="secondary" data-text="back"></button></div>
+ <div class="content">
+  <div class="task-meta"><span id="task-kind"></span><span id="task-count"></span><button id="adult" class="secondary compact" data-text="adult"></button></div>
+  <progress id="progress" max="8" value="0" aria-label="Postup / Progress"></progress>
+  <h2 id="task-title"></h2>
+  <img id="task-image" class="task-image" alt="" width="1536" height="1024">
+  <div class="scene" id="scene-panel" hidden><span class="small-label" data-text="scene"></span><p id="scene"></p></div>
+  <p id="story-reminder" class="hint" data-text="storyReminder" hidden></p>
+  <p class="question" id="question"></p>
+  <div id="choice-panel" class="picture-choices" role="group" aria-label="A / B / C" hidden></div>
+  <form id="answer-form"><div id="text-response">
+   <label for="answer" data-text="answer"></label>
+   <div class="voice-controls"><button type="button" class="secondary" id="mic" aria-pressed="false" disabled></button><span id="speech-status" role="status" aria-live="polite"></span></div>
+   <p class="hint" id="speech-note"></p><p class="hint voice-privacy" id="speech-privacy"></p><p id="speech-partial" aria-live="off"></p>
+   <textarea id="answer" rows="3" maxlength="2000" aria-describedby="answer-hint"></textarea><p class="hint" id="answer-hint" data-text="hint"></p>
+   </div><div class="actions"><button type="submit" id="submit"></button><button type="button" id="clear" class="secondary" data-text="clear"></button></div>
+  </form>
+  <p id="error" role="alert" hidden></p>
+  <div id="recorded" class="recorded" role="status" hidden><p data-text="recorded"></p><button id="next"></button></div>
+  <section id="result" class="result" aria-live="polite" hidden><div class="result-top"><h3 id="result-title"></h3><span id="score"></span></div><p id="reason"></p><dl id="relations"></dl></section>
+  <details id="examples-panel"><summary data-text="examples"></summary><div id="examples"></div></details><details id="source-panel"><summary data-text="sourceTitle"></summary><p id="source-info"></p><p id="source-note"></p><p id="source-original"></p></details>
+ </div>
+</section>
+<section id="paused" class="workspace content" hidden><h2 data-text="adultInstructions"></h2><p data-text="pauseInfo"></p><h3 id="adult-task"></h3><img id="adult-image" class="task-image" alt=""><div class="scene"><p id="adult-script"></p></div><p id="adult-note" class="source-notice"></p><p id="adult-question"></p><p class="hint" data-text="noFeedback"></p><button id="resume" data-text="resume"></button></section>
+<section id="complete" class="workspace content" hidden><h2 data-text="finished"></h2><p data-text="thanks"></p><button id="show-results" data-text="showResults"></button></section>
+<section id="results" hidden>
+ <div class="workspace content"><h2 data-text="results"></h2><p class="hint" id="session-info"></p><div id="summary" class="summary"></div><p class="hint" data-text="scoreNote"></p><div class="actions"><button id="export" data-text="export"></button><button id="new-test" class="secondary" data-text="newTest"></button></div><p id="export-status" role="status"></p><p class="hint" data-text="memory"></p>
+ <div class="table-wrap"><table><thead><tr><th data-text="task"></th><th data-text="answer"></th><th data-text="finalStatus"></th><th data-text="review"></th></tr></thead><tbody id="result-rows"></tbody></table></div></div>
+ <section id="review-panel" class="workspace content" hidden>
+  <h2 id="review-title"></h2><p id="review-question"></p>
+  <details><summary data-text="reviewScene"></summary><img id="review-image" class="task-image" alt=""><p id="review-scene"></p><p id="review-source"></p><p id="review-key"></p></details>
+  <h3 data-text="original"></h3><blockquote id="original-answer"></blockquote><p id="original-result"></p>
+  <form id="review-form"><label for="review-answer" data-text="corrected"></label><p class="hint" id="review-choice-note" hidden>A / B / C</p><textarea id="review-answer" rows="3" maxlength="2000"></textarea>
+   <label for="review-override" data-text="decision"></label><select id="review-override"></select>
+   <label for="review-note" data-text="reviewNote"></label><textarea id="review-note" rows="2" maxlength="1000"></textarea>
+   <p class="hint" data-text="reviewHint"></p><button id="save-review" type="submit" data-text="saveReview"></button>
+  </form><p id="review-message" role="status"></p><p id="current-auto"></p>
+  <h3 data-text="history"></h3><div id="history"></div>
+ </section>
+</section>
+<footer id="footer"><p data-text="footer"></p><p data-text="prototype"></p></footer>
+</main></body></html>
