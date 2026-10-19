@@ -23,15 +23,6 @@ z oddielov 2.1–2.8 článku. Každý typ má JEDNU ukážkovú položku:
 8. Osvojovanie nových prídavných mien — patravali/patravalo; výber obrázka.
 Podrobná mapa na článok a obmedzenia sú v METODIKA.md.
 
-ROZSAH
-Toto NIE JE kompletná 80-položková batéria ani validovaný ROMLAT.
-Článok zverejňuje príklady, nie všetky testové položky a kompletný manuál.
-Slovenčina používa novú sadu AI ilustrácií s prostredím známym zo Slovenska.
-Angličtina a vietnamčina používajú pôvodné výrezy z dodaného PDF.
-Zmenu obrázkov a pôvod podnetov opisuje METODIKA.md.
-SK, EN a VI sú pracovné adaptácie. Nejde o overené rovnocenné verzie.
-Výsledky nie sú odhadom jazykovej úrovne, diagnózou ani porovnaním s normami.
-
 OVLÁDANIE
 Dospelý vyberie SK / EN / VI a celý test alebo skúšanie jednej úlohy.
 Pri úlohách s úvodom sa automaticky otvoria pokyny pre dospelého.
@@ -97,16 +88,3 @@ opakované odoslanie, ručné opravy, história a CSV.
 Fyzický mikrofón ani vizuálne vykreslenie v skutočnom prehliadači neboli
 v tomto prostredí overené. Pred ukážkou učiteľovi skús celý priechod lokálne.
 
-SLOVENSKÁ ÚLOHA 6 — SPONKY A SLOVESNÝ VID
-Obrázok ponechávame: horný panel zobrazuje prebiehajúce pripínanie sponiek,
-dolný dokončenú úpravu (dievča už má ruky spustené). Mama v oboch varí polievku.
-Dospelý ukáže horný panel a povie:
-„Túto činnosť nazveme travinovať. Kým mama varí polievku, dievča travinuje
- dedkove vlasy.“ Potom ukáže dolný panel a nechá dieťa doplniť:
-„Kým mama varí polievku, dievča už…“
-Pracovný príklad pre dospelého: „Dotravinovalo dedkove vlasy.“
-Pred odpoveďou dieťaťa tento príklad neprezrádzajte. Nejde o otázku „čo drží?“. 
-Samotné pomenovanie sponiek netestuje použitie nového slovesa a dokončenie deja.
-Odborník má schváliť slovenský slovotvorný vzor a akceptované alternatívy;
-preto aplikácia ani túto vzorovú odpoveď automaticky neboduje.
-Pri porovnávaní behov rozlišujte pôvodné obrázky a novú sadu sk_ai_v1.
